@@ -28,3 +28,11 @@ h4 {
     background: url(../img/right-arrow.svg);
     margin: auto;
 }
+
+.manutencao {
+    width: 600px;
+    height: auto;
+    background: var(--graywhite-color);
+    border-radius: 20px;
+    margin: 20% auto;
+}
