@@ -162,6 +162,7 @@ footer {
     width: 100%;
     height: 100%;
     position: fixed;
+<<<<<<< HEAD
     top: -10px;
     opacity: 0;
     visibility: hidden;
@@ -170,6 +171,9 @@ footer {
 #gif.active {
     opacity: 1;
     visibility: visible;
+=======
+    top: 0;
+>>>>>>> bdd2a013db0f13b365f06b2f062608323041d9e5
 }
 
 footer p,

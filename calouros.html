@@ -8,6 +8,17 @@
     <title>Calouros - Centro Acadêmico de Sistema de Informação</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/calouros.css">
+    <script>
+        function gif() {
+            const gif = document.getElementById("gif");
+            gif.innerHTML = "<img src=\"assets/img/final.gif\">";
+            setTimeout(function() {
+                gif.innerHTML = "";
+                gif.style.top ="110%";
+            }, 7000);
+            
+        }
+    </script>
 </head>
 
 <body onload="gif()">
@@ -99,17 +110,6 @@
         <span class="logo"></span>
         <p>&copy Copyright - 2021 Patrick Rodrigues</p>
     </footer>
-    <script>
-        function gif() {
-            const gif = document.getElementById("gif");
-            gif.classList.add("active")
-            gif.innerHTML = "<img src=\"assets/img/final.gif\">";
-            setTimeout(function() {
-                gif.innerHTML = "";
-            }, 7000);
-            gif.classList.remove("active");
-        }
-    </script>
 </body>
 
 </html>
