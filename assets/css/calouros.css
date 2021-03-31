@@ -158,6 +158,20 @@ footer {
     font-size: 1.1rem;
 }
 
+#gif {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#gif.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 footer p,
 span {
     margin: auto auto;
