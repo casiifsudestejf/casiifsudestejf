@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #1c4269;
+    --secondary-color: #232325;
+    --dracula-color: #211723;
+    --draculawhite-color: #643d6b;
+    --graywhite-color: #a6a6a6;
+    --red-color: #ea190f;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --graydark-color: #6d6767;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: ubuntu, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* ------ Rodapé ------ */
+footer {
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+footer p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

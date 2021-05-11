@@ -1,0 +1,31 @@
+@import url("./config.css");
+
+/* ------ NavBar ------ */
+nav .voltar {
+    padding-left: 100px;
+}
+nav .voltar img {
+    width: 15px;
+}
+nav .voltar a {
+    color: var(--primary-color);
+}
+nav .logo {
+    padding-right: 150px;
+}
+nav .logo img {
+    width: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+    /* ------ NavBar ------ */
+    nav .voltar {
+        padding-left: 20px;
+    }
+    nav .logo {
+        padding-right: 20px;
+    }
+    nav .logo img {
+        width: 100px;
+    }
+}

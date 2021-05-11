@@ -1,0 +1,226 @@
+@import url("./config.css");
+
+/* ------ NavBar ------ */
+
+.navbar {
+    background-color: var(--white-color);
+}
+.navbar .navbar-brand {
+    margin-top: -40px;
+}
+.navbar .navbar-brand .img-logo {
+    border-radius: 45px;
+    width: 150px;
+    margin-left: 80px;
+}
+/* ------ Home ------ */
+
+#home {
+    background: url(./../assets/img/background-home.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: static;
+}
+
+#home main {
+    margin-top: 200px;
+    max-width: 510px;
+}
+
+#home main h1 {
+    color: var(--primary-color);
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+}
+#home main a.button {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 8px;
+}
+#home main a.buttonCalouros  {
+    color: var(--white-color);
+}
+#home main a.buttonVeteranos {
+    color: var(--black-color);
+}
+#home main a.buttonCalouros {
+    background-color: var(--dracula-color);
+}
+#home main a.buttonVeteranos {
+    background-color: var(--graywhite-color);
+}
+#home main a.buttonCalouros:hover {
+    background-color: var(--draculawhite-color);
+    transition-duration: 0.7s;
+   
+}
+#home main a.buttonVeteranos:hover {
+    background-color: var(--graydark-color);
+    transition-duration: 0.7s;
+}
+/* ------ Sobre ------ */
+
+#sobre {
+    background: url(./../assets/img/background-sobre.png) no-repeat bottom #1d223d;
+    background-size: contain;
+    font-family: "Fira Sans" sans-serif;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#sobre .content {
+    background-color: var(--dracula-color);
+    color: var(--white-color);
+    display: block;
+    padding: 20px;
+    margin: 0px 0px 0px 70px;
+    border-radius: 20px;
+}
+#sobre .content .circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 20px 0;
+    border-radius: 50%;
+}
+
+#sobre .content .circle:nth-child(1) {
+    background-color: #ea190f;
+}
+#sobre .content .circle:nth-child(2) {
+    background-color: #f3aa66;
+}
+#sobre .content .circle:nth-child(3) {
+    background-color: #0e974d;
+}
+#sobre .content h1,
+#sobre .content .tag,
+#sobre .content p {
+    display: block;
+}
+#sobre .content h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 30px;
+}
+#sobre .content .tag {
+    font-size: 1.2em;
+    color: var(--red-color);
+    font-family: monospace;
+    font-weight: bold;
+}
+#sobre .content p {
+    padding-left: 20px;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+/* ------ Eventos ------ */
+
+#eventos {
+    height: auto;
+    width: 100%;
+    background: url(./../assets/img/background-eventos-1.png), url(./../assets/img/background-eventos-2.jpg);
+    background-size: cover;
+}
+#eventos .title-eventos {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+#eventos .cards-eventos {
+    padding-bottom: 100px;
+}
+/* ------ Autores ------ */
+
+#autores {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--white-color);
+}
+#autores h3 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+#autores .cards-autores {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#autores .cards-autores .card-deck .card {
+    background-color: var(--secondary-color);
+    border-radius: 0 15px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.378);
+    text-align: center;
+}
+#autores .cards-autores .card-deck .card img {
+    border-radius: 40px;
+    padding: 30px;
+}
+/* ------ Contatos ------ */
+
+#contatos {
+    width: 100%;
+    height: auto;
+    background: url(./../assets/img/background-contatos.svg) no-repeat;
+    background-size: cover;
+    background-color: var(--white-color);
+    padding-bottom: 100px;
+}
+#contatos h2 {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* ------ Responsive page ------*/
+@media only screen and (max-width: 992px) {
+    /* ------ NavBar ------ */
+    .navbar .navbar-brand .img-logo {
+        width: 90px;
+        margin-left: 5%;
+        padding-top: 10px;
+        border-radius: 0;
+    }
+    /* ------ Home ------ */
+
+    #home main {
+        margin-top: 180px;
+    }
+    #home main h1 {
+        font-size: 36px;
+    }
+
+    /* ------ Sobre ------ */
+
+    #sobre .content {
+        padding: 20px;
+        margin: 0px 0px 0px 0px;
+    }
+    #sobre .carousel-members {
+        margin-top: 80px;
+    }
+    /* ------ Eventos ------ */
+    #eventos {
+        height: auto;
+    }
+    /* ------ Autores ------ */
+
+    #autores .cards-autores .card-deck {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #autores .cards-autores .card-deck .card img {
+        border-radius: 20px;
+        padding: 10px;
+    }
+    /* ------ Contatos ------ */
+}
